@@ -17,6 +17,8 @@ namespace DesktopContactsApp
         {
             InitializeComponent();
 
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
             contacts = new List<Contact>();
 
             ReadDatabase();

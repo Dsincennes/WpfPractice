@@ -9,10 +9,13 @@
         Title="MainWindow" Height="450" Width="525">
     <StackPanel Margin="10">
         <Button Content="New contact"
-                Click="Button_Click"/>
-        <Label HorizontalAlignment="Center">Search</Label>
+                Click="Button_Click"
+                Width="90"/>
+        <TextBlock HorizontalAlignment="Center"
+                   Margin="0 5 0 0">Search</TextBlock>
         <TextBox Margin="0 5 0 5"
-                 TextChanged="TextBox_TextChanged">
+                 TextChanged="TextBox_TextChanged"
+                 Width="200">
         </TextBox>
         <ListView x:Name="contactsListView"
                   Height="280"
