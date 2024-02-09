@@ -18,6 +18,9 @@ namespace DesktopContactsApp
             nameTextBox.Text = contact.Name;
             emailTextBox.Text = contact.Email;
             phoneNumberTextBox.Text = contact.Phone;
+
+            Owner = Application.Current.MainWindow;
+            WindowStartupLocation = WindowStartupLocation.CenterOwner;
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
